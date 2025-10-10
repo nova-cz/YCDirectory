@@ -11,7 +11,7 @@ import Image from "next/image";
 
 import markdownit from "markdown-it";
 import { Skeleton } from "@/components/ui/skeleton";
-import View from "@/components/View"
+import View from "@/components/View";
 import StartupCard, { StartupTypeCard } from "@/components/StartupCard";
 
 const md = markdownit();
@@ -21,16 +21,21 @@ export const experimental_ppr = true;
 const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
     const id = (await params).id;
 
-    // APLICACIÓN DE LA SOLUCIÓN 1
-    const [post, playlistData] = await Promise.all([
+    // --- INICIO DE LA CORRECCIÓN ---
+
+    // 1. Obtenemos los resultados en variables separadas y no desestructuramos directamente.
+    const [post, playlistResult] = await Promise.all([
         client.fetch(STARTUP_BY_ID_QUERY, { id }),
         client.fetch(PLAYLIST_BY_SLUG_QUERY, {
             slug: "editor-picks-new",
         }),
     ]);
-    
-    // Asignamos los posts al array, usando un array vacío como fallback si la lista o 'select' es null.
-    const editorPosts: StartupTypeCard[] = playlistData?.select || [];
+
+    // 2. Extraemos 'editorPosts' de forma segura.
+    // Si 'playlistResult' es null, 'editorPosts' será un array vacío [].
+    const editorPosts = playlistResult?.select || [];
+
+    // --- FIN DE LA CORRECCIÓN ---
 
     if (!post) return notFound();
 
@@ -38,7 +43,6 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
 
     return (
         <>
-            {/* ... el resto de tu código */}
             <section className="pink_container !min-h-[230px]">
                 <p className="tag">{formatDate(post?._createdAt)}</p>
 
@@ -91,7 +95,6 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
 
                 <hr className="divider" />
 
-                {/* Usa editorPosts que ahora es seguro */}
                 {editorPosts?.length > 0 && (
                     <div className="max-w-4xl mx-auto">
                         <p className="text-30-semibold">Editor Picks</p>
