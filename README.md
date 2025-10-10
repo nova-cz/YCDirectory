@@ -14,6 +14,11 @@
   <img src="https://img.shields.io/badge/Sanity-CMS-orange?style=for-the-badge&logo=sanity" alt="Sanity.io">
 </p>
 
+<div align="center">
+  <img src="img/pagina.jpeg" alt="Vista previa de la aplicación YCDirectory" width="800"/>
+</div>
+
+<br>
 ## ✨ Características Principales
 
 - 📱 **Interfaz Moderna y Responsiva**: Experiencia de usuario impecable en cualquier dispositivo, desde móviles hasta escritorios.
