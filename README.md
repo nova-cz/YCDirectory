@@ -16,7 +16,9 @@
 
 <div align="center">
   <img src="./img/pagina.jpeg" alt="Vista previa de la aplicación YCDirectory" width="800"/>
+  
 </div>
+
 
 
 > [!NOTE]
