@@ -138,6 +138,11 @@ const StartupForm = () => {
                     required
                     placeholder="Startup Image URL"
                 />
+                <p className="text-sm text-muted-foreground mt-2">
+                    Pega la URL directa de la imagen (debe terminar en .jpg, .png, etc.).
+                    <br />
+                    <b>Tip:</b> Haz clic derecho en cualquier imagen en la web y selecciona "Copiar dirección de la imagen".
+                </p>
 
                 {errors.link && <p className="startup-form_error">{errors.link}</p>}
             </div>
