@@ -18,16 +18,221 @@
   <img src="./img/pagina.jpeg" alt="Vista previa de la aplicación YCDirectory" width="800"/>
 </div>
 
-<br>
+
 ## ✨ Características Principales
 
-- 📱 **Interfaz Moderna y Responsiva**: Experiencia de usuario impecable en cualquier dispositivo, desde móviles hasta escritorios.
-- ⚡ **Rendimiento de Vanguardia**: Cargas casi instantáneas gracias a Next.js 14 con Server Side Rendering (SSR) y Static Site Generation (SSG).
-- 🔍 **Búsqueda Avanzada y Filtros**: Encuentra startups por nombre, sector, tecnologías o ubicación de forma rápida y precisa.
-- 🔄 **Contenido Dinámico**: Gestión de datos en tiempo real a través del headless CMS Sanity.io.
-- 🔐 **Autenticación Segura**: Sistema de registro e inicio de sesión robusto y seguro implementado con NextAuth.js.
-- 📊 **Monitorización de Errores**: Integración con Sentry para la detección y resolución proactiva de problemas.
-- 🎨 **Componentes Reutilizables**: UI construida con Shadcn/ui, garantizando accesibilidad y consistencia.
+<div style="
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+">
+  <!-- Tarjeta 1 -->
+  <div style="
+    background: linear-gradient(145deg, #f8fafc, #f1f5f9);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #3b82f6;
+  ">
+    <h3 style="
+      color: #1e293b;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0 0 0.75rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    ">
+      <span style="font-size: 1.5rem;">📱</span> Interfaz Moderna
+    </h3>
+    <p style="
+      color: #475569;
+      line-height: 1.6;
+      margin: 0;
+      font-size: 0.95rem;
+    ">Experiencia de usuario impecable en cualquier dispositivo, desde móviles hasta escritorios.</p>
+  </div>
+
+  <!-- Tarjeta 2 -->
+  <div style="
+    background: linear-gradient(145deg, #f8fafc, #f1f5f9);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #10b981;
+  ">
+    <h3 style="
+      color: #1e293b;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0 0 0.75rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    ">
+      <span style="font-size: 1.5rem;">⚡</span> Rendimiento
+    </h3>
+    <p style="
+      color: #475569;
+      line-height: 1.6;
+      margin: 0;
+      font-size: 0.95rem;
+    ">Cargas casi instantáneas gracias a Next.js 14 con Server Side Rendering (SSR) y Static Site Generation (SSG).</p>
+  </div>
+
+  <!-- Tarjeta 3 -->
+  <div style="
+    background: linear-gradient(145deg, #f8fafc, #f1f5f9);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #8b5cf6;
+  ">
+    <h3 style="
+      color: #1e293b;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0 0 0.75rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    ">
+      <span style="font-size: 1.5rem;">🔍</span> Búsqueda Avanzada
+    </h3>
+    <p style="
+      color: #475569;
+      line-height: 1.6;
+      margin: 0;
+      font-size: 0.95rem;
+    ">Encuentra startups por nombre, sector, tecnologías o ubicación de forma rápida y precisa.</p>
+  </div>
+
+  <!-- Tarjeta 4 -->
+  <div style="
+    background: linear-gradient(145deg, #f8fafc, #f1f5f9);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #ec4899;
+  ">
+    <h3 style="
+      color: #1e293b;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0 0 0.75rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    ">
+      <span style="font-size: 1.5rem;">🔄</span> Contenido Dinámico
+    </h3>
+    <p style="
+      color: #475569;
+      line-height: 1.6;
+      margin: 0;
+      font-size: 0.95rem;
+    ">Gestión de datos en tiempo real a través del headless CMS Sanity.io.</p>
+  </div>
+
+  <!-- Tarjeta 5 -->
+  <div style="
+    background: linear-gradient(145deg, #f8fafc, #f1f5f9);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #f59e0b;
+  ">
+    <h3 style="
+      color: #1e293b;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0 0 0.75rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    ">
+      <span style="font-size: 1.5rem;">🔐</span> Autenticación Segura
+    </h3>
+    <p style="
+      color: #475569;
+      line-height: 1.6;
+      margin: 0;
+      font-size: 0.95rem;
+    ">Sistema de registro e inicio de sesión robusto y seguro implementado con NextAuth.js.</p>
+  </div>
+
+  <!-- Tarjeta 6 -->
+  <div style="
+    background: linear-gradient(145deg, #f8fafc, #f1f5f9);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #ef4444;
+  ">
+    <h3 style="
+      color: #1e293b;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0 0 0.75rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    ">
+      <span style="font-size: 1.5rem;">📊</span> Monitorización
+    </h3>
+    <p style="
+      color: #475569;
+      line-height: 1.6;
+      margin: 0;
+      font-size: 0.95rem;
+    ">Integración con Sentry para la detección y resolución proactiva de problemas.</p>
+  </div>
+
+  <!-- Tarjeta 7 -->
+  <div style="
+    background: linear-gradient(145deg, #f8fafc, #f1f5f9);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 4px solid #6366f1;
+  ">
+    <h3 style="
+      color: #1e293b;
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0 0 0.75rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    ">
+      <span style="font-size: 1.5rem;">🎨</span> Componentes Reutilizables
+    </h3>
+    <p style="
+      color: #475569;
+      line-height: 1.6;
+      margin: 0;
+      font-size: 0.95rem;
+    ">UI construida con Shadcn/ui, garantizando accesibilidad y consistencia en todos los componentes.</p>
+  </div>
+</div>
+
+<style>
+  /* Efecto hover para las tarjetas */
+  @media (hover: hover) {
+    div[style*="background: linear-gradient"]:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+  }
+</style>
 
 ## 🛠️ Stack Tecnológico
 
@@ -117,4 +322,3 @@ Sigue estos pasos para configurar y ejecutar el proyecto en tu entorno local.
 
 ¡Abre [http://localhost:3000](http://localhost:3000) en tu navegador para ver la aplicación en funcionamiento!
 
-## 📂 Estructura del Proyecto
